@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: mathlms_backend
+    ports:
+      - "8080:8080"
+    environment:
+      - DB_HOST=host.docker.internal
+      - DB_PORT=3306
+      - DB_NAME=math_lms
+      - DB_USER=root
+      - DB_PASSWORD=7010816140123@aA
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    networks:
+      - mathlms_network
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: mathlms_frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    networks:
+      - mathlms_network
+
+volumes: {}
+
+networks:
+  mathlms_network:
+    driver: bridge
