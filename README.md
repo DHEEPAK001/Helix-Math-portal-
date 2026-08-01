@@ -1,4 +1,4 @@
-# 📚 Math Learning Management System (Math LMS)
+# 📚 Math Learning Management System (Helix)
 
 A modern, AI-powered Learning Management System (LMS) designed to simplify mathematics education through interactive learning modules, automated assessments, intelligent tutoring, and real-time performance analytics.
 
