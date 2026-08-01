@@ -373,6 +373,10 @@ This project is licensed under the MIT License.
 
 ## 👨‍💻 Author
 
+**Dheepak Adhithya**
+
+B.E - Computer Science Engineering
+
 **Karthi Keyan**
 
 B.Tech – Artificial Intelligence and Data Science
